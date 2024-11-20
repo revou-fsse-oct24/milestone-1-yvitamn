@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This project is an online store built for a brand Terese"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <script src="https://cdn.tailwindcss.com"></script>  -->
+    <title>TERESE</title>  
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+  
+</head>
+
+
+<body class="bg-white text-black">
+  <div class="grid grid-rows-[auto,1fr,auto,1fr,auto] grid-cols-1 gap-4 min-h-screen">
+
+  <!-- <div> -->
+    <!-- <form id="searchForm"> -->
+       <!-- <label for="searchInput">Search:</label>  -->
+      <!-- <input type="text" id="searchInput" placeholder="Type to search..." required> -->
+      
+
+    <!-- </form> -->
+    <!-- <div class="search-results" id="searchResults"></div> -->
+    <!-- </div> -->
+
+  <header class="sticky-header" id="header">
+    <!-- <header class="p-6 bg-gray-200 text-center text-3xl font-bold">
+      
+  </header> -->
+   
+<div class="search-container flex-none";>
+  <button class="search-icon" onclick="toggleSearch()">
+  🔍
+  <input type="text" id="search-input" placeholder="Search..." style="display: none;">
+</button>
+
+<script>
+    function toggleSearch() {
+      event.preventDefault();
+        const searchInput = document.getElementById('search-input');
+        if (searchInput.style.display === 'none' || searchInput.style.display === '') {
+            searchInput.style.display = 'block';
+            searchInput.focus();
+        } else {
+            searchInput.style.display = 'none';
+        }
+    }
+</script> 
+</div>
+
+    <span style="text-align: center";>
+  <h1 class="text-3xl font-bold">T  E  R  E  S  E</h1>
+  
+      <nav class="font-nav">                          
+      <select a href="indeks.html" id="shop" name="shop">          
+          <option value="shop">SHOP</option>
+          <option value="new">New</option>
+          <option value="dresses">Dresses</option>
+          <option value="sets">Sets</option>
+      </select>
+              <a href="#">SIZING</a>
+              <a href="contact.html">CONTACT</a>
+              <a href="#">RETURNS</a>
+  
+            </nav>
+            <div style="text-align: center; background-color: #333; color: white";> 
+              <a href="#" class="announcement-bar-link"> 
+                <p class="announcement-bar-message">
+                    <div style="text-align: center";>  
+                    <span style="color:white";>15% OFF BLACK STYLES with code: FRIDAY</span>
+        </p>
+        </a>
+        </div>
+  
+
+  <script>
+    // JavaScript for handling dropdown selection
+    document.getElementById("shop").addEventListener("change", function() {
+        const value = this.value;
+        if (value === "shop") {
+            window.location.href = "indeks.html"; 
+        } else if (value === "new") {
+            window.location.href = "new.html"; 
+        } else if (value === "dresses") {
+            window.location.href = "dresses.html"; 
+        } else if (value === "sets") {
+            window.location.href = "sets.html"; 
+        }
+    });
+</script>
+
+
+  </span>
+  </div>
+  </header>
+  
+  
+
+    <main class="content-container grid grid-rows-3 gap-4">
+      <!-- <div class="grid-container">
+        <div class="item-1"></div>       
+        <div class="item-2"></div>
+        <div class="item-3"></div>
+       
+      </div> -->
+
+  <section class="grid-container grid grid-cols-1 md:grid-cols-2 gap-4">
+
+            <div class="product-image w-full h-64 bg-gray-300 flex justify-center items-center">
+              <!-- <div class="item-2"> -->
+
+<picture>
+  <source media="(min-width:768px)" srcset="assets/img/Menorca set.webp">
+  <img src="assets/img/Menorca set.webp" alt="Menorca Set Tobacco" style="width:100%">
+  <source media="(min-width:768px)" srcset="assets/img/Menorca set1.webp">
+  <img src="assets/img/Menorca set1.webp" alt="Menorca Set Tobacco1" style="width:100%">
+  
+</picture>
+
+                <!-- <img class="visible-desktop" src="assets/img/Menorca set.webp" alt="Menorca Set Tobacco">                           
+                <img class="visible-mobile" src="assets/img/Menorca set1.webp" alt="Menorca Set Tobacco1"> -->
+
+                
+           
+             <!-- <img src="assets/img/Linen-Menorca.jpg" alt="Menorca Set Tobacco1" width="600" height="900" >   -->
+             
+              </div>
+
+<article>
+              <div class="product-details flex flex-col justify-center p-4">            
+              <span style="text-align: center;">
+               
+                      <h2 text-xl font-semibold>Menorca Set - Tobacco</h2>
+                      <p class="price">$309.00</p>
+                 
+                  <p>
+                    Designed for your everlasting wardrobe, the Menorca Top in Tobacco is your summer linen essential.
+                    This long sleeve crop top is crafted from responsibly sourced linen and features a relaxed silhouette,
+                    high boat neckline, and flared shape through the sleeves for an exaggerated flair. 
+                    Style it with the matching Es Raco Skirt for a timeless two-piece set.
+                  </p>
+              
+                  <p>
+                    The Es Raco Skirt in Tobacco is a brown maxi skirt designed to sit high on the waist and fall to a floating full-length hem. 
+                    Crafted from European Flax® linen, boasting complete traceability and socially responsible standards, 
+                    the Es Raco Skirt is a wardrobe staple you can wear for all occasions. 
+                    Style it with the removable belt featuring multi-coloured resin beads, hand-crafted by our Indonesian artisans.
+                  </p>
+                </span>
+                  <h4>Product Details</h4>
+                  <ul>
+                    <li>Made from Linen - European Flax® & OEKO-TEX100® Certified</li>
+                    <li>Women's belted maxi skirt</li>
+                    <li>Removable belt with multi-coloured resin beads</li>
+                    <li>High-rise waist</li>
+                    <li>Fixed waistband</li>
+                    <li>Thin belt loops</li>
+                    <li>Vertical panel line shaping</li>
+                    <li>Invisible zipper with hook and eye</li>
+                    <li>Unlined</li>
+                    <li>Designed to be fitted through the waist and relaxed through the skirt</li>
+                  </ul>
+                  <p>Styling Note: This is an easy, wearable two-piece set, perfect for all occasions. The skirt comes with a beaded belt that you can also wear with jeans and a t-shirt.</p>
+
+ <!-- Select Dropdown -->
+ <div class="selector-group" style="text-align: center;">
+ <label for="sizes">Size</label>
+ <br>
+ <select id="sizes" name="sizes";>
+     <option value="xs">XS</option>
+     <option value="s">S</option>
+     <option value="m">M</option>
+     <option value="l">L</option>
+ </select>
+</div>
+<br>
+<br>
+<!-- quantity -->
+<div style="text-align: center;">
+<form action="#" method="post">
+<label for="sizes">Quantity</label>
+
+<br>
+<div class="quantity-container" style="text-align: center;">
+  <button class="quantity-button" onclick="changeQuantity(-1)">-</button>
+  <input type="number" id="quantity" class="quantity-input" value="1" min="1">
+  <button class="quantity-button" onclick="changeQuantity(1)">+</button>
+</div>
+
+<script>
+  function changeQuantity(delta) {
+      const input = document.getElementById('quantity');
+      let currentValue = parseInt(input.value);
+      currentValue += delta;
+      if (currentValue < 1) currentValue = 1; // Prevent negative quantity
+      input.value = currentValue;
+  }
+</script>
+</form>
+</div>                
+                
+                      <!-- button add to cart -->
+                      <!-- <button class="addtocart"> -->
+                        <!-- <div class="addtocart">ADD TO CART</div> -->
+<br>
+
+                      <!-- payment  -->
+                      <div class="checkbox-group" style="text-align: center;">
+                  
+                      <fieldset>
+                        <legend>Select your payment:</legend>
+                        <label>
+                            <input type="checkbox" name="payment" value="creditordebit"> Credit/Debit card
+                        </label>
+                        <label>
+                            <input type="checkbox" name="payment" value="banktransfer"> Bank transfer
+                        </label>
+                        <label>
+                            <input type="checkbox" name="payment" value="digiormobile"> Digital/Mobile wallet
+                        </label>
+                        <label>
+                          <input type="checkbox" name="payment" value="cod"> Cash on delivery
+                      </label>
+                      <label>
+                        <input type="checkbox" name="payment" value="buynowpaylater"> Buy now pay later
+                    </label>
+                    </fieldset>
+                      </div>
+<br>
+
+<div class="button-group">
+  <form action="#" method="post">
+    
+    <style>
+      .black-button {
+      
+        background-color: black;
+        color: white; 
+        border: none; 
+        padding: 10px 20px; 
+        font-size: 16px; 
+        cursor: pointer; /* Pointer cursor on hover */
+        border-radius: 5px; 
+        transition-property: background-color;
+        transition-duration: 2s;
+        transition-delay: 1s;
+        /* transition: width 2s, height 2s, background-color 2s; */
+    }
+    .black-button:hover {
+        background-color: darkgray; /* Change color on hover */
+    }
+      
+    </style> 
+    </form>
+<body>
+
+<button class="black-button" onclick="alert('Add to Cart!')">ADD TO CART</button>
+</body>
+ <!-- </form>  -->
+</div>
+
+<br>
+<br>
+                    <p> 
+                      <h4>Size & Fits</h4>
+                      <br>
+Fits true to size. Designed for a relaxed fitting look.
+Fitted waist, please check your measurements against the product measurements below.
+<br>
+
+Lenny is wearing a size Small and her measurements are Height: 5’11”, Bust: 31”, Waist: 24”, Hips: 35.5”.
+<br>
+Lenny is wearing a size Small and her measurements are Height: 5’11”, Bust: 31”, Waist: 24”, Hips: 35.5”.
+</p>
+
+<div>
+<!-- Centered Table with Flexbox -->
+<style>
+    .table-container {
+        display: flex;
+        justify-content: center; /* Centers the table */
+    }
+    table {
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px; 
+        text-align: center;
+    }
+</style>
+
+
+<div class="table-container">
+<table> 
+  <thead>   
+      <tr>
+      
+          <th></th>  <!-- Header cell -->
+          <th>XS</th>  <!-- Header cell -->
+          <th>S</th> <!-- Header cell -->
+          <th>M</th> <!-- Header cell -->
+          <th>L</th>         
+      </tr>
+  </thead>
+  <tbody>
+    <tr>
+      
+      <th scope="row">LENGTH</th>
+      <td>39.8</td>
+      <td>40.0</td>
+      <td>40.2</td>
+      <td>40.4</td>   
+    </tr>
+    <tr>
+      
+      <th scope="row">WAIST CIRCUMFERENCE</th>
+      <td>26.4</td>
+      <td>28.0</td>
+      <td>29.5</td>
+      <td>31.1</td>   
+    </tr>
+    <tr>
+  
+      <th scope="row">HEM CIRCUMFERENCE</th>
+      <td>86.6</td>
+      <td>88.2</td>
+      <td>89.8</td>
+      <td>91.3</td> 
+    </tr> 
+  </tbody>
+</table>
+
+</div>
+</div>
+<br>
+<br>
+
+<p> 
+  <h4>Garment care</h4>
+  <br>
+  100% Linen - European Flax® & OEKO-TEX100 ® Certified
+
+Linen is designed to soften over time, with wear.
+
+Colour variations and natural defects in the weave are a part of the garments unique beauty.
+
+This garment is hand-made, hand-dyed and hand-printed in Bali, Indonesia. Due to this hand-made process each piece is unique and there can be slight irregularities in the print and colour of the garment. To ensure a long lasting garment life whilst caring for the environment please follow these instructions:
+
+Hand-wash in cold water. These care processes are more gentle on the garments and help to protect the colour, shape and structure of the fabric whilst reducing the amount of energy used.
+
+Avoid bleach and use environmentally friendly detergents. Avoid tumble dry and hang dry where possible. This saves electricity and avoids fibre degradation.
+
+Cool iron when needed.
+</p>
+</div>              
+
+    <!-- </form> -->
+              </div>
+            <!-- </div> */div productpage*/ -->
+              </section>
+</article>
+  </main>
+
+  
+<div class="footer-wraper">
+<footer>
+  <div class="sticky-footer">
+  <div class="inputType-joinUs">
+    <div style="text-align: center;">
+      <p>Join us on email and get 10% off your first purchase</p>
+    <input
+      autocomplete="email"
+      type="email"
+      id="ContactForm-email"
+      class="field__input"
+      name="contact[email]"
+      spellcheck="false"
+      autocapitalize="off"
+      value=""
+      aria-required="true"   
+      placeholder="Email"
+    ></div>
+  </div>
+  </div>
+</footer>
+</div>
+
+
+
+</section>
+</div>
+
+
+</div>
+</body>
+
+
+  
+
+<!-- } -->
+<!-- </style> -->
+
+</html>

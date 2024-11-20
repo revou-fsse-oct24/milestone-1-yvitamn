@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homepagestyle.css">
+    <script src="index.js"></script>
+</head>
+
+    <body>
+
+        <header class="sticky-header" id="header">
+           
+           
+        <div class="search-container";>
+          <button class="search-icon" onclick="toggleSearch()">
+          🔍
+          <input type="text" id="search-input" placeholder="Search..." style="display: none;">
+        </button>
+        
+        <script>
+            
+        </script>
+        </div>
+        
+            <span style="text-align: center";>
+          <h1 class="text-3xl font-bold">T  E  R  E  S  E</h1>
+          
+              <nav class="font-nav">                          
+              <select a href="indeks.html" id="shop" name="shop">          
+                  <option value="shop">SHOP</option>
+                  <option value="new">New</option>
+                  <option value="dresses">Dresses</option>
+                  <option value="sets">Sets</option>
+              </select>
+                      <a href="#">SIZING</a>
+                      <a href="contact.html">CONTACT</a>
+                      <a href="#">RETURNS</a>
+          
+                    </nav>
+                    <div style="text-align: center; background-color: #333; color: white";> 
+                      <a href="#" class="announcement-bar-link"> 
+                        <p class="announcement-bar-message">
+                            <div style="text-align: center";>  
+                            <span style="color:white";>15% OFF BLACK STYLES with code: FRIDAY</span>
+                </p>
+                </a>
+                </div>
+       
+        
+          <script>
+            // JavaScript for handling dropdown selection
+            document.getElementById("shop").addEventListener("change", function() {
+                const value = this.value;
+                if (value === "shop") {
+                    window.location.href = "indeks.html"; 
+                } else if (value === "new") {
+                    window.location.href = "new.html"; 
+                } else if (value === "dresses") {
+                    window.location.href = "dresses.html"; 
+                } else if (value === "sets") {
+                    window.location.href = "sets.html"; 
+                }
+            });
+        </script> 
+          </span>
+          </div>         
+          </header>
+    
+    <main class="content-container">
+        
+                <section class="grid-container">
+
+                <section class="section banner1">
+                    <!-- <link href=""> -->
+                   
+    <div class="container-mainhome">
+        <div class="banner-media">
+            <picture>
+            <source media="(min-width)" srcset="assets/img/banner1.webp">
+            <img src="assets/img/banner1.webp" alt="banner image" style="width: 100%;">
+        </picture>
+        </div>
+    </section>
+    
+        <section class="section banner2">
+        <div class="banner-content">
+            <div class="banner-box">
+                <h2 class="welcome-banner">MADE IN INDONESIA</h2>       
+               <div class="button-group">              
+                <a href="#" class="banner-button">SHOP</a>
+                <form action="#" method="post">
+    
+                    <style>
+                      .banner-button {
+                      
+                        background-color: white;
+                        color: black; 
+                        border: none; 
+                        padding: 10px 20px; 
+                        font-size: 16px; 
+                        cursor: pointer; /* Pointer cursor on hover */
+                        border-radius: 5px; 
+                        transition-property: background-color;
+                        transition-duration: 2s;
+                        transition-delay: 1s;
+                        /* transition: width 2s, height 2s, background-color 2s; */
+                    }
+                    .black-button:hover {
+                        background-color: darkgray; /* Change color on hover */
+                    }
+                      
+                    </style> 
+                    </form>
+
+               </div>
+    
+    
+            </div>  
+    </div>
+            </div>
+            </section>
+    
+    <!-- Unisex Shirts Section -->
+  <section class="section unisex-shirts">
+    <h2>Unisex Shirts Collection</h2>
+    <div class="container-mainhome">
+      <div class="unisex-shirt-slider">
+        <!-- Shirt 1 -->
+        <div class="unisex-shirt-card">
+            <picture>
+          <img src="assets/img/shirt1.webp" alt="Unisex Shirt 1">
+        </picture>
+          <div class="content">
+            <h3>Unisex Shirt One</h3>
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Shirt 2 -->
+        <div class="unisex-shirt-card">
+            <picture>
+                <img src="assets/img/shirt2.webp" alt="Unisex Shirt 2">
+              </picture>
+          <div class="content">
+            <h3>Unisex Shirt Two</h3>
+        
+          </div>
+        </div>
+
+        <!-- Shirt 3 -->
+        <div class="unisex-shirt-card">
+            <picture>
+                <img src="assets/img/shirt3.webp" alt="Unisex Shirt 3">
+              </picture>
+          <div class="content">
+            <h3>Unisex Shirt Three</h3>           
+          </div>
+        </div>
+      </div>
+      
+      <!-- Slider Button -->
+      <button class="slider-btn">View More</button>
+    </div>
+  </section>
+    
+   
+
+    <!-- Special Projects Section -->
+  <section class="section special-projects">
+    <h2>Special Projects</h2>
+    <div class="container-mainhome">
+      <div class="project-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <img src="" alt="Project 1">
+          <div class="content">
+            <h3>Project One</h3>
+            <p>Details </p>
+          </div>
+        </div>
+
+    
+  </section>
+   
+
+
+    <!-- Best Sellers Section -->
+  <section class="section best-sellers">
+    <h2>Best Sellers</h2>
+    <div class="container-mainhome">
+      <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <img src="assets/img/shirt4.webp" alt="Best Seller 1">
+          <div class="content">
+            <h3>Item One</h3>
+           
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <img src="assets/img/shirt5.webp" alt="Best Seller 2">
+          <div class="content">
+            <h3>Item Two</h3>
+                      </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <img src="assets/img/shirt6.webp" alt="Best Seller 3">
+          <div class="content">
+            <h3>Item Three</h3>
+                     </div>
+        </div>
+
+       
+      </div>
+    </div>
+  </section>
+
+    <!-- Clients Notes Section -->
+  <section class="section clients-notes">
+    <h2>Notes from Clients</h2>
+    <div class="container-mainhome">
+        <div class="testimonial">
+      <!-- Testimonial 1 -->
+      
+        <p>"TERESE's pieces are timeless. I always get compliments!"</p>
+        <h4>- Jane Doe</h4>
+      
+
+      <!-- Testimonial 2 -->
+      
+        <p>"Exceptional craftsmanship and beautiful design. Highly recommend!"</p>
+        <h4>- John Smith</h4>
+      
+
+      <!-- Testimonial 3 -->
+      
+        <p>"The best clothing I've ever bought. Worth every penny!"</p>
+        <h4>- Sarah Lee</h4>
+      
+
+    </div>
+    </div>
+  </section>
+
+  <script>
+    // Slider Button functionality (example)
+    document.querySelector(".slider-btn").addEventListener("click", function () {
+      alert("Redirect to full collection page...");
+    });
+  </script>
+
+
+                </section>
+    </main>
+</body>
+</html>

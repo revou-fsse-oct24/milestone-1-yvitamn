@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERESE</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div>
+    <div class="search-container">
+        <button class="search-icon" onclick="toggleSearch()">
+        🔍
+        <input type="text" id="search-input" placeholder="Search..." style="display: none;">
+    </button>
+   
+    <script>
+          function toggleSearch() {
+            event.preventDefault();
+              const searchInput = document.getElementById('search-input');
+              if (searchInput.style.display === 'none' || searchInput.style.display === '') {
+                  searchInput.style.display = 'block';
+                  searchInput.focus();
+              } else {
+                  searchInput.style.display = 'none';
+              }
+          }
+      </script>
+  </div>
+  
+      <!-- </form> -->
+      <!-- <div class="search-results" id="searchResults"></div> -->
+      </div>
+  
+    <header>
+    <div class="sticky-header">
+     
+      <span style="color:black; text-align: center";>
+    <h1>TERESE</h1>
+    
+        <nav>                          
+        <select a href="indeks.html" id="shop" name="shop">          
+            <option value="shop">SHOP</option>
+            <option value="new">New</option>
+            <option value="dresses">Dresses</option>
+            <option value="sets">Sets</option>
+        </select>
+                <a href="#">SIZING</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="#">RETURNS</a>
+              
+        
+              </nav>
+        
+        <div style="text-align: center; background-color: #333; color: white";>
+          <a href="#" class="announcement-bar-link">
+            <p class="announcement-bar-message">
+                <div style="text-align: center";>  
+                <span style="color:white";>15% OFF BLACK STYLES with code: FRIDAY</span>
+    </p>
+    </a>
+    </div>
+   
+    <!-- <div class="localization-wrapper"></div> -->
+
+    <script>
+      // JavaScript for handling dropdown selection
+      document.getElementById("shop").addEventListener("change", function() {
+          const value = this.value;
+          if (value === "shop") {
+              window.location.href = "indeks.html"; // Redirect to "indeks.html"
+          } else if (value === "new") {
+              window.location.href = "new.html"; // Redirect to "new.html"
+          } else if (value === "dresses") {
+              window.location.href = "dresses.html"; // Redirect to "dresses.html"
+          } else if (value === "sets") {
+              window.location.href = "sets.html"; // Redirect to "sets.html"
+          }
+      });
+  </script>
+  
+    </span>
+    </div>
+    
+    </header>
+    
+    
+  
+      <main>
+        <div class="color-background-1 gradient">
+          <div class="contact page-width page-width--narrow section-template--17471302566057__form-padding"><h2 class="visually-hidden">Contact us</h2>
+            <form method="post" action="/contact#ContactForm" id="ContactForm" accept-charset="UTF-8" class="isolate scroll-trigger animate--slide-in">
+              <input type="hidden" name="form_type" value="contact" /><input type="hidden" name="utf8" value="✓" /><div class="contact__fields">
+                <div class="field">
+                  <input
+                    class="field__input"
+                    autocomplete="name"
+                    type="text"
+                    id="ContactForm-name"
+                    name="contact[Name]"
+                    value=""
+                    placeholder="Name"
+                  >
+                  <label class="field__label" for="ContactForm-name">Name</label>
+                </div>
+                <div class="field field--with-error">
+                  <input
+                    autocomplete="email"
+                    type="email"
+                    id="ContactForm-email"
+                    class="field__input"
+                    name="contact[email]"
+                    spellcheck="false"
+                    autocapitalize="off"
+                    value=""
+                    aria-required="true"
+                    
+                    placeholder="Email"
+                  >
+                  <label class="field__label" for="ContactForm-email">Email
+                    <span aria-hidden="true">*</span></label
+                  ></div>
+              </div>
+              <div class="field">
+                <input
+                  type="tel"
+                  id="ContactForm-phone"
+                  class="field__input"
+                  autocomplete="tel"
+                  name="contact[Phone number]"
+                  pattern="[0-9\-]*"
+                  value=""
+                  placeholder="Phone number"
+                >
+                <label class="field__label" for="ContactForm-phone">Phone number</label>
+              </div>
+              <div class="field">
+                <textarea
+                  rows="10"
+                  id="ContactForm-body"
+                  class="text-area field__input"
+                  name="contact[Comment]"
+                  placeholder="Comment"
+                ></textarea>
+                <label class="form__label field__label" for="ContactForm-body">Comment</label>
+              </div>
+              <div class="contact__button">
+                <button type="submit" class="button">
+                  Send
+                </button>
+              </div></form></div>
+        </div>
+
+
+
+      </main>
+</body>
+</html>
