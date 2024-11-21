@@ -9,7 +9,7 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script>  -->
     <title>TERESE</title>  
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
+   
   
 </head>
 
@@ -32,73 +32,44 @@
       
   </header> -->
    
-<div class="search-container flex-none";>
-  <button class="search-icon" onclick="toggleSearch()">
-  🔍
-  <input type="text" id="search-input" placeholder="Search..." style="display: none;">
-</button>
 
-<script>
-    function toggleSearch() {
-      event.preventDefault();
-        const searchInput = document.getElementById('search-input');
-        if (searchInput.style.display === 'none' || searchInput.style.display === '') {
-            searchInput.style.display = 'block';
-            searchInput.focus();
-        } else {
-            searchInput.style.display = 'none';
-        }
-    }
-</script> 
-</div>
+
 
     <span style="text-align: center";>
   <h1 class="text-3xl font-bold">T  E  R  E  S  E</h1>
-  
-      <nav class="font-nav">                          
-      <select a href="indeks.html" id="shop" name="shop">          
-          <option value="shop">SHOP</option>
-          <option value="new">New</option>
-          <option value="dresses">Dresses</option>
-          <option value="sets">Sets</option>
-      </select>
-              <a href="#">SIZING</a>
-              <a href="contact.html">CONTACT</a>
-              <a href="#">RETURNS</a>
-  
+
+
+  <section class="navbar-option">
+   <div class="nav-option-wrapper">
+      <nav class="nav-option">                           
+              <a href="#">ALL</a>
+              <a href="#">NEW</a>
+              <a href="#">TOPS</a>
+              <a href="#">BOTTOMS</a>
+              <a href="#">SETS</a>
+              <a href="#">SALE</a>
+              <a href="#">SAMPLES</a>
+              <a href="#">SEARCH</a>
+
             </nav>
-            <div style="text-align: center; background-color: #333; color: white";> 
-              <a href="#" class="announcement-bar-link"> 
-                <p class="announcement-bar-message">
-                    <div style="text-align: center";>  
-                    <span style="color:white";>15% OFF BLACK STYLES with code: FRIDAY</span>
-        </p>
-        </a>
-        </div>
-  
-
-  <script>
-    // JavaScript for handling dropdown selection
-    document.getElementById("shop").addEventListener("change", function() {
-        const value = this.value;
-        if (value === "shop") {
-            window.location.href = "indeks.html"; 
-        } else if (value === "new") {
-            window.location.href = "new.html"; 
-        } else if (value === "dresses") {
-            window.location.href = "dresses.html"; 
-        } else if (value === "sets") {
-            window.location.href = "sets.html"; 
-        }
-    });
-</script>
-
-
-  </span>
+          </div>
+          </section>
+        </span>
+ 
   </div>
   </header>
   
-  
+  <section class="announcement-bar"> 
+    <a href="#" class="announcement-bar-link"> 
+      <p class="announcement-bar-message">
+          <div style="text-align: center";>  
+          <span style="color:white";>15% OFF BLACK STYLES with code: FRIDAY</span>
+          </div>
+</p>
+</a>
+
+  </section>
+</header>
 
     <main class="content-container grid grid-rows-3 gap-4">
       <!-- <div class="grid-container">
@@ -107,6 +78,8 @@
         <div class="item-3"></div>
        
       </div> -->
+
+
 
   <section class="grid-container grid grid-cols-1 md:grid-cols-2 gap-4">
 
@@ -397,6 +370,7 @@ Cool iron when needed.
 
 
 </div>
+<script src="index.js"></script>
 </body>
 
 
