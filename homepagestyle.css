@@ -385,6 +385,10 @@ main {
       }
   
       /* Best Sellers Section */
+    .see-all-click{
+justify-self: end;
+}
+
       .best-sellers {
         background-color: #f0f0f0;
       }
