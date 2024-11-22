@@ -135,23 +135,38 @@ main {
         margin: 10 auto; /* Centering the grid */      
        
       }
-   
+      .header-heading{
+        padding: 8px 16px;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .list-menu {
+        list-style: none;
+        display: flex;
+        gap: 16px; /* space between menu items */
+      }
+      
+      .list-menu li {
+        display: inline-block;
+      }
+      
+      .list-menu li a {
+        color: black;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 2px 16px;
+        /* transition: background-color 0.3s ease; */
+      }
+      
+      .list-menu li a:hover {
+        background-color: #555;
+        border-radius: 4px;
+      }
 
-
-    .navbar li {
-        margin-right: 20px;   /* Space between items */
-    }
     
-    .navbar li a {
-        color: white;         /* Link color */
-        text-decoration: none; /* Remove underline */
-        padding: 15px;       /* Padding for clickable area */
-    }
-    
-    .navbar li a:hover {
-        background-color: #575757; /* Background color on hover */
-        border-radius: 4px; /* Rounded corners */
-    }
    
     .button-group {
         display: flex;
