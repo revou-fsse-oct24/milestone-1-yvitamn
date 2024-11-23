@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes ">
     <title>TERESE</title>
     <link rel="stylesheet" href="./css/index.css">
+
     
 </head>
 
@@ -16,7 +17,7 @@
     <span style="text-align: center";>
         
       <h1 class="header-heading">T  E  R  E  S  E</h1>
-      <a href="index.html">
+      <!-- <a href="index.html"> -->
         <!-- <div class="logo-wrapper"> -->
           <!-- <img src="" -->
         <!-- </div> -->
@@ -58,17 +59,22 @@
         </div>
     
     <main class="content-container">
-        <picture>
+      
                 <section class="grid-container">
 
                 <section class="section banner1">
                     <!-- <link href=""> -->                 
     <div class="container-mainhome">
         <div class="banner-media">
-            
-            <source media="(min-width)" srcset="assets/img/banner1.webp">
-            <img src="assets/img/banner1.webp" alt="banner image" style="width: 100%;">
-        
+            <picture>
+            <source media="(max-width: 767px)" srcset="assets/img/banner1.webp 480w, 
+            assets/img/banner1.webp 480w 2x">   
+            <source media="(min-width: 768px)" srcset="assets/img/banner1.webp">
+            <source media="(min-width: 1200px)" srcset="assets/img/banner1.webp 768w,
+            assets/img/banner1.webp 768w 2x">
+            <img src="assets/img/banner1.webp" srcset="assets/img/banner1.webp 1200w,
+            assets/img/banner1.webp 1200w 2x" alt="banner image" style="width: 100%">
+            </picture>
         </div>
     </section>
     
@@ -95,7 +101,7 @@
                         transition-delay: 1s;
                         /* transition: width 2s, height 2s, background-color 2s; */
                     }
-                    .black-button:hover {
+                    .banner-button:hover {
                         background-color: darkgray; /* Change color on hover */
                     }
                       
@@ -259,7 +265,7 @@
   </script>
 
                 </section>
-        </picture>
+      
             </main>
 
                 <section class="footer-wraper" style="text-align: center;">

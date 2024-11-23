@@ -202,7 +202,7 @@ main {
         align-items: flex-end; */
         text-align: center;
         padding: 100px;
-        background-color: #333; /* Dark footer */
+        background-color: #333; 
         color: white;
         position: fixed;
         bottom: 0;
@@ -396,7 +396,7 @@ main {
   
       .project-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
         gap: 20px;
       }
   
@@ -474,13 +474,13 @@ justify-self: end;
       }
   
       /* Navbar Footer styles */
-.navbar-footer {
+   .navbar-footer { 
     display: flex; 
     justify-content: space-between; 
     padding: 1rem 2rem; 
     background-color: #343a40; 
     color: #fff; */
-  }
+   }
   
   .navbar-brand {
     font-size: 1.5rem; /* Brand text size */
@@ -516,36 +516,23 @@ justify-self: end;
   
   /* Collapse on smaller screens */
   @media only screen and (max-width: 991px) {
-    .navbar-nav {
-      display: none; /* Hide the links on small screens */
+    .content-container {
+      width: 100%;
+      padding: 10px;
     }
-  
-    .navbar-footer-toggler {
-      display: block; /* Show the hamburger menu */
-      background-color: #fff; 
-      border: none;
+
+    .list-menu{
+      display:none;
     }
-  
-    .navbar-footer-toggler-icon {
-      background-color: #000; 
-      width: 25px;
-      height: 2px;
-    }
-  
-    .navbar-footer-collapsed .navbar-footer-nav {
-      display: block; /* Display the links when menu is toggled */
-    }
-  
-    .navbar-footer-collapse {
-      display: block;
-      text-align: center;
-    }
+   
   }
 
 
    
       /* Responsive Styles */
-      @media only screen and (max-width: 768px) {
+      
+
+      @media only screen and (max-width: 767px) {
         img{
             max-width: 80%;
         }
@@ -564,6 +551,10 @@ justify-self: end;
         .testimonial p {
           font-size: 0.9rem;
         }
+      }
+
+      @media only screen and (min-width: 768px) {
+
       }
 
       @media only screen and(min-width: 1200px){

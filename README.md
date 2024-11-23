@@ -2,7 +2,7 @@
 ----
 # [Project Module-2](#project-module-2)
 
-This project is an online store built for a brand ![Terese](), using [HTML, CSS, Javascript].
+This project is an online store built for a brand ![Terese](teresestudios.web.id)
 
 
 ----
@@ -32,22 +32,19 @@ External Libraries/Framework: Bootstrap
    1. Visit the Netlify website homepage and clik Sign Up button and choose one of the methods,
    here we choose Sign Up with email. ![Signup1 ss](./assets/img/readme-ss-mod2/Screenshot%20(471).png)![Signup2 ss](./assets/img/readme-ss-mod2/Screenshot%20(472).png)
 
-   2. After Sign up with email and create a password, now log in with email and password ![Login ss](./assets/img/readme-ss-mod2/Screenshot%20(416).webp)
-   Confirm the email address by clicking verification link sent to your inbox. Choose Netlify several pricing tiers. Select Free tiers and start using Netlify.
-
-   3. After create a Netlify account with email, create a site, click on "New site from Git" select gitHub. Log in Github account first, and click on "Authorize Netlify"  
+   2. After Sign up with email and create a password, now log in with email and password. If you don't have project there to deploy yet, click on "New site from Git" select gitHub. Log in Github account first, and click on "Authorize Netlify" if it not connected yet.  
    ![Connect github ss](./assets/img/readme-ss-mod2/Screenshot%20(418).webp) 
-   
-   ![Connect github ss](./assets/img/readme-ss-mod2/Screenshot%20(419).webp)
-   
+
    
 - [Steps of auto deployment with Netlify]
-   1. Select the specific repository that you want to deploy, the repository need to be public ![Choose repo ss](./assets/img/readme-ss-mod2/Screenshot%20(420).webp) You can scroll down here select branch to deploy, here we select " "main" branch and skip other options. After configuring the build settings, click on "Deploy site"
+   1. Select the specific repository that you want to deploy, the repository need to be public 
+   ![Connect github ss](./assets/img/readme-ss-mod2/Screenshot%20(569).webp)
+   ![Choose repo ss](./assets/img/readme-ss-mod2/Screenshot%20(420).webp) You can scroll down here select branch to deploy, here we select " "main" branch and skip other options. After configuring the build settings, click on "Deploy site"
    ![Deploy repo ss](./assets/img/readme-ss-mod2/Screenshot%20(421).webp)
-   Wait until the process complete![Process1 depo ss](./assets/img/readme-ss-mod2/Screenshot%20(422).webp)![Process2 depo ss](./assets/img/readme-ss-mod2/Screenshot%20(423).webp)
-   Its the display after its deployed ![Deploy success1 ss](./assets/img/readme-ss-mod2/Screenshot%20(469).png) Once the deployment is successful, Netlify will give URL to access your site
-   ![Deploy success2 ss](./assets/img/readme-ss-mod2/Screenshot%20(426).webp)
-   2. Check for auto deployment in Netlify, click on "Deploys" ![Check deploy1 ss](./assets/img/readme-ss-mod2/Screenshot%20(434).png)![Check deploy2 ss](./assets/img/readme-ss-mod2/Screenshot%20(424).webp)![Check deploy3 ss](./assets/img/readme-ss-mod2/Screenshot%20(425).webp)![Check deploy4 ss](./assets/img/readme-ss-mod2/Screenshot%20(506).png)
+   Wait until the process complete
+   Its the display after its deployed ![Deploy success1 ss](./assets/img/readme-ss-mod2/Screenshot%20(469).png) Once the deployment is successful, Netlify will give URL to access your site.
+   2. Check for auto deployment in Netlify, click on "Deploys" 
+   ![Check deploy4 ss](./assets/img/readme-ss-mod2/Screenshot%20(610).webp)
 
 
 - [Set up custom domain]
@@ -64,11 +61,7 @@ External Libraries/Framework: Bootstrap
    3. Copy the 4 DNS from Netlify to this page, click "DNS/Nameserver" select radiobutton "Ganti nama server" ![Rename DNS1 ss](./assets/img/readme-ss-mod2/Screenshot%20(444).png)
    ![Rename DNS2 ss](./assets/img/readme-ss-mod2/Screenshot%20(447).png)![Rename DNS2 ss](./assets/img/readme-ss-mod2/Screenshot%20(448).png)![Rename DNS3 ss](./assets/img/readme-ss-mod2/Screenshot%20(449).png)
    Back to Netlify again to check if the new domain works with the DNS set up with Niagahoster. 
-   ![Result DNS1 ss](./assets/img/readme-ss-mod2/Screenshot%20(455).png) Go to "Site overview" ![Result DNS2 ss](./assets/img/readme-ss-mod2/Screenshot%20(452).png)
-   ![Result DNS3 ss](./assets/img/readme-ss-mod2/Screenshot%20(456).png)
-   Check at Netlify again ![Result DNS4 ss](./assets/img/readme-ss-mod2/Screenshot%20(474).png)
-   and the elemen and performance score ![Check1 ss](./assets/img/readme-ss-mod2/Screenshot%20(457).png)![Check2 ss](./assets/img/readme-ss-mod2/Screenshot%20(468).png)
-
+   ![Result DNS1 ss](./assets/img/readme-ss-mod2/Screenshot%20(455).png) 
 
 ## [Usage](#usage)
 
