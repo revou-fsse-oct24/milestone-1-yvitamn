@@ -2,7 +2,7 @@
 ----
 # [Project Module-2](#project-module-2)
 
-This project is an online store built for a brand ![Terese](teresestudios.web.id)
+This project is an online store built for a brand ![Terese](./assets/img/readme-ss-mod2/Screenshot%20(657).png)
 
 
 ----
@@ -44,7 +44,7 @@ External Libraries/Framework: Bootstrap
    Wait until the process complete
    Its the display after its deployed ![Deploy success1 ss](./assets/img/readme-ss-mod2/Screenshot%20(469).png) Once the deployment is successful, Netlify will give URL to access your site.
    2. Check for auto deployment in Netlify, click on "Deploys" 
-   ![Check deploy4 ss](./assets/img/readme-ss-mod2/Screenshot%20(610).webp)
+   ![Check deploy4 ss](./assets/img/readme-ss-mod2/Screenshot%20(658).png)
 
 
 - [Set up custom domain]
