@@ -560,9 +560,14 @@ main {
       /* Clients Notes Section */
       .clients-notes {
         background-color: #ffffff;
-        padding: 60px 20px;
+        /* padding: 60px 20px; */
+        text-align: center;
+        padding: 40px 0;
       }
-  
+      .clients-notes h3 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
       .testimonial {
         background-color: #f9f9f9;
         border-radius: 8px;
@@ -571,19 +576,36 @@ main {
         margin-bottom: 30px;
         text-align: center;
       }
-  
+       /* Avatar circular */
+       .avatar-testi {
+        display: inline-block;
+        width: 60px; /* Adjust the size of the avatar */
+        height: 60px; /* Ensure the height and width are the same */
+        overflow: hidden;
+        border-radius: 50%; /* This makes the image round */
+        margin-bottom: 10px;
+      }
+
+      .avatar-testi img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* image covers the container without distortion */
+        border-radius: 50%; /* Ensures the image itself is round */
+      }
+
       .testimonial p {
         font-size: 1rem;
+        font-style: italic;
         color: #666;
         margin-bottom: 10px;
       }
   
       .testimonial h4 {
-        font-weight: 600;
+        font-weight: bold;
         color: #333;
+        margin-top: 10px;
       }
   
-
 
           /* Navbar Footer styles */
       .navbar-footer { 
@@ -630,7 +652,7 @@ main {
 
 
    
-      /* Responsive Styles */
+      /* Responsive Styles fonts */
       @media only screen and (max-width: 1200px) {
         section h1 {
           font-size: 2.5rem;
@@ -734,7 +756,7 @@ main {
 
 
 /* Show the footer-block when its clicked */
-.footer-accordion input: + .footer-block {
+.footer-accordion input:checked + .footer-block {
   display: block;
 }
 
@@ -834,7 +856,7 @@ main {
       }
     
 
-/* Large Screens (Desktop) */
+/* Large Screens (Desktop) footer*/
 @media (min-width: 769px) {
   .footer-flex {
     grid-template-columns: repeat(5, 1fr); 
