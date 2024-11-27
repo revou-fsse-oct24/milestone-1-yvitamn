@@ -26,16 +26,24 @@
       
         <!-- <section class="navbar-option"> -->
          <!-- <div class="nav-option-wrapper"> -->
-            <nav class="header-menu">  
+            <nav class="header-menu"> 
+                <!-- Hamburger icon -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </div>
+
+
               <ul class="list-menu" role="list">                      
-                    <li><a href="#">ALL</a></li>
-                    <li><a href="#">NEW</a></li>
-                    <li><a href="#">TOPS</a></li>
-                    <li><a href="#">BOTTOMS</a></li>
-                    <li><a href="#">SETS</a></li>
-                    <li><a href="#">SALE</a></li>
-                    <li><a href="#">SAMPLES</a></li>
-                    <li><a href="search.html">SEARCH</a></li>
+                    <li><a href="#"><h3>all</h3></a></li>
+                    <li><a href="#"><h3>new</h3></a></li>
+                    <li><a href="#"><h3>tops</h3></a></li>
+                    <li><a href="#"><h3>bottoms</h3></a></li>
+                    <li><a href="#"><h3>sets</h3></a></li>
+                    <li><a href="#"><h3>sale</h3></a></li>
+                    <li><a href="#"><h3>samples</h3></a></li>
+                    <!-- <li><a href="search.html">SEARCH</a></li> -->
                   </ul>
                   </nav>
                 <!-- </div> -->
@@ -54,7 +62,19 @@
       </p>
       </a>
       
-        </section>    
+        </section> 
+        
+        <script>
+          // Get the hamburger menu and the list of menu items
+          const hamburgerMenu = document.getElementById("hamburger-menu");
+          const menuList = document.querySelector(".list-menu");
+        
+          // Toggle the menu when the hamburger is clicked
+          hamburgerMenu.addEventListener("click", function() {
+            menuList.classList.toggle("open");
+          });
+        </script>
+        
           </header>
         </div>
     
@@ -65,8 +85,9 @@
                 <section class="section banner1">
                     <!-- <link href=""> -->                 
     <div class="container-mainhome">
-        <div class="banner-media">
-            <picture>
+      <div class="banner">
+        <!-- <div class="banner-media"> -->
+            <!-- <picture>
             <source media="(max-width: 767px)" srcset="assets/img/banner1.webp 480w, 
             assets/img/banner1.webp 480w 2x">   
             <source media="(min-width: 768px)" srcset="assets/img/banner1.webp">
@@ -74,8 +95,9 @@
             assets/img/banner1.webp 768w 2x">
             <img src="assets/img/banner1.webp" srcset="assets/img/banner1.webp 1200w,
             assets/img/banner1.webp 1200w 2x" alt="banner image" style="width: 100%">
-            </picture>
-        </div>
+            </picture> -->
+        <!-- </div> -->
+      </div>
     </section>
     
         <section class="section banner2">
@@ -118,7 +140,7 @@
     
     <!-- Unisex Shirts Section -->
   <section class="section unisex-shirts">
-    <h2>Unisex Shirts Collection</h2>
+    <h3>Unisex Shirts Collection</h3>
     <div class="container-mainhome">
     
       <div class="unisex-shirt-slider">
@@ -170,14 +192,22 @@
 
     <!-- Special Projects Section -->
   <section class="section special-projects">
-    <h2>Special Projects</h2>
+    <h3>Special Projects</h3>
     <div class="container-mainhome">
       <div class="project-grid">
         <!-- Project 1 -->
         <div class="project-card">
-          <img src="" alt="Project 1">
+          <img src="assets/img/teresepotrait2.webp" alt="Project 1">
           <div class="content">
-            <h3>Project One</h3>
+            <h3>Terese Portraits</h3>
+            <p>Details </p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/img/tereseplaylists.webp" alt="Project 2">
+          <div class="content">
+            <h3>Terese Playlists</h3>
             <p>Details </p>
           </div>
         </div>
@@ -189,7 +219,7 @@
 
     <!-- Best Sellers Section -->
   <section class="section best-sellers">
-    <h2>Best Sellers</h2>
+    <h3>Best Sellers</h3>
     <a class="see-all-click" href="#"></a>
         <h4>SEE ALL</h4>  
     </div>
@@ -227,7 +257,7 @@
 
     <!-- Clients Notes Section -->
   <section class="section clients-notes">
-    <h2>Notes from Clients</h2>
+    <h3>Notes from Clients</h3>
     <div class="container-mainhome">
         
       <!-- Testimonial 1 -->   
@@ -268,16 +298,160 @@
       
             </main>
 
-                <section class="footer-wraper" style="text-align: center;">
-                <footer>
-                    <nav class="navbar-footer">
-                        <a class="navbar-brand" href="index.html">Terese</a>                       
-                        <span>Yogyakarta</span>
-                        <span>+62 811 777 1200</span>
-                      
-                      </nav>
+
+                
+                <footer class="footer-page">
+                  <div class="footer-content">
+                    <div class="footer-flex">
+
+                      <div class="footer-accordion">
+                        <!-- <div class="newsletter-wrapper"> -->
+                        <label>
+                          <input type="checkbox" name="footer-links" id="newsletter" class="footer-hidden">
+                          <h3>newsletter<h3> 
+                          <span class="arrow">
+
+                          </span>
+
+                        </label>
+
+                        <div class="footer-block">
+                          <div class="newsletter-wrapper">
+                           <p>
+                            "be the first to know about product"
+                            <br>
+                            "launches, exclusives and happenings at the studio"
+                           </p>
+                          </div>
+                          <form method="post" action="#" id="newsletter-form-footer" class="newsletter-form">   
+                            <input type="hidden" name="form-type" value="customer">
+                            <input type="hidden" name="utf8" value="✓">
+                            <p class="newsletter-message">
+                              <em>This customer is already subscribed!</em>
+                            </p>
+                            <input type="hidden" name="contact[accepts_marketing]" value="true">
+                            <div class="input-group">
+                              <input type="email" 
+                              autocomplete="email"
+                              id="email-input-footer-0" 
+                              class="input-group__field" 
+                              placeholder="Email" 
+                              aria-label="Email" 
+                              autocorrect="off" 
+                              autocapitalize="off" 
+                              name="contact[email]" 
+                              spellcheck="false"
+                              data-newsletter-field="" required="">
+                              <button type="submit"
+                              class="newsletter-submit" 
+                              name="subscribe" 
+                              id="subscribe-button-footer-0">
+                                sign up
+                              </button>
+                            
+                            </div>          
+                          </form>
+                      </div>
+                    </div>
+
+
+                    <div class="footer-flex">
+                      <div class="footer-accordion">
+                      <label>
+                          <input type="checkbox" name="footer-links" id="info" class="footer-hidden">
+                          <h3>info<h3> 
+                          <span class="arrow">
+
+                          </span>
+
+                        </label>
+                        <div class="footer-block">
+                          <ul class="footer-lists">
+                            <li>
+                              <a href="#" class="footer-menu"><h4>contact</h4>></a>
+                              <a href="#" class="footer-menu"><h4>stockists</h4></a>
+                              <a href="#" class="footer-menu"><h4>terms</h4></a>
+                              
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      </div>
+
+                      <div class="footer-flex">
+                        <div class="footer-accordion">
+                      <label>
+                        <input type="checkbox" name="footer-links" id="product" class="footer-hidden">
+                        <h3>product</h3> 
+                        <span class="arrow">
+
+                        </span>
+
+                      </label>
+                      <div class="footer-block">
+                        <ul class="footer-lists">
+                          <li>                           
+                            <a href="#" class="footer-menu"><h4>sizing</h4></a>
+                            <a href="#" class="footer-menu"><h4>delivery</h4></a>
+                            <a href="#" class="footer-menu"><h4>return & exchanges</h4></a>
+
+                          </li>
+                        </ul>
+                      </div>               
+                      </div>
+                    </div>
+
+                    <div class="footer-flex">
+                      <div class="footer-accordion">
+                      <label>
+                        <input type="checkbox" name="footer-links" id="about" class="footer-hidden">
+                        <h3>about</h3> 
+                        <span class="arrow">
+
+                        </span>
+
+                      </label>
+                      <div class="footer-block">
+                        <ul class="footer-lists">
+                          <li>
+                            <a href="#" class="footer-menu">about</a>
+                            <a href="#" class="footer-menu">journal</a>
+
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="footer-flex">
+                    <div class="footer-accordion">
+                    <label>
+                      <input type="checkbox" name="footer-links" id="social" class="footer-hidden">
+                      <h3>social</h3> 
+                      <span class="arrow">
+                        <!-- <img src="" class="arrow-right" alt="Right Arrow">
+                        <img src="" class="arrow-down" alt="Down Arrow"> -->
+                      </span>
+
+                    </label>
+                    <div class="footer-block">
+                      <ul class="footer-lists">
+                        <li>
+                          <a href="#" class="footer-menu"><h4>instagram</h4></a>
+                          <a href="#" class="footer-menu"><h4>pinterest</h4></a>
+                          <a href="#" class="footer-menu"><h4>youtube</h4></a>
+                          
+                        </li>
+                      </ul>
+                    </div>
+                  </div>                   
+                      </div>
+
+                    </div>             
+                    </div>
                     </footer>
-                </section>
+                
 
     
     <script src="./js/index.js"></script>
